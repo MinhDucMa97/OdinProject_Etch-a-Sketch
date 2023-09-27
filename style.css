@@ -4,8 +4,69 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color:rgb(161, 140, 113);
+}
+
+
+.flex-container {
+    text-align: center;
+    display: grid;
+    gap: 30px;
+    
+}
+
+.title {
+    margin-top: 20px;
+    color: #282985;
+    font-weight: bold;
+}
+
+.mode {
+    font-weight: bold;
+    font-size: 25px;
+    color: rgb(45, 94, 45);
+}
+
+.content {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
 .board {
     width: 500px;
     height: 500px;
     display: grid;
+    border: solid;
+}
+
+.button-container {
+    margin-top: 20px;
+}
+
+button {
+    width: 100px;
+    height: 25px;
+    border-style: none;
+    font-size: 16px;
+    font-weight:700;
+    font-family:'Times New Roman', Times, serif;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+#random {
+    color: black;
+    background-image: linear-gradient(to right, #6666ff, #0099ff , #00ff00, #ff3399, #6666ff);;
+}
+
+input {
+    width: 200px;
+    height: 30px;
 }

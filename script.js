@@ -1,6 +1,7 @@
 // Create 16x16 grids
 let color = "black";
 let click = true;
+
 function populatedBoard(size) {
   let board = document.querySelector(".board");
   let square = board.querySelectorAll("div");
@@ -50,10 +51,13 @@ function resetBoard() {
 document.querySelector("body").addEventListener("click", (e) => {
   if (e.target.tagName != "BUTTON") {
     click = !click;
+    let mode = document.querySelector(".mode");
     if (click) {
-      document.querySelector(".mode").textContent = "Mode: Coloring";
+      mode.textContent = "Mode: Coloring";
+      mode.style.color = "green";
     } else {
-      document.querySelector(".mode").textContent = "Mode: Not coloring";
+      mode.textContent = "Mode: Not coloring";
+      mode.style.color = "red";
     }
   }
 });

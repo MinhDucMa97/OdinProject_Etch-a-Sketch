@@ -13,11 +13,13 @@
       <div class="mode">Mode: Coloring</div>
       <div class="content">
         <div class="board"></div>
-        <button onclick="changeColor('black')">Black</button>
-        <button onclick="changeColor('white')">Erasor</button>
-        <button onclick="changeColor('gray')">Gray</button>
-        <button onclick="changeColor('random')">Random</button>
-        <button onclick="resetBoard()">Reset</button>
+        <div class="button-container">
+          <button onclick="changeColor('black')">Black</button>
+          <button onclick="changeColor('white')">Erasor</button>
+          <button onclick="changeColor('gray')">Gray</button>
+          <button onclick="changeColor('random')" id="random">Random</button>
+          <button onclick="resetBoard()">Reset</button>
+        </div>
       </div>
       <div>
         <input
